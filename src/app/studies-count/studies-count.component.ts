@@ -34,12 +34,12 @@ export class StudiesCountComponent implements OnInit {
       { study_id: 3, study_name: 'Test Study 3', step_status: 'complete', step_id: 3, step_name: 'Sponsor CDA' },
     ];
     // study count
-    this.getStudyCount();
-    // study summary
     this.getStudySummary();
+    // study summary
+    this.getStudyCount();
   }
 
-  getStudyCount() {
+  getStudySummary() {
     this.data.forEach(element => {
       // find the index same study id
       let index = this.studyCount.findIndex(x => x.study_id == element.study_id);
@@ -64,7 +64,7 @@ export class StudiesCountComponent implements OnInit {
     });
   }
 
-  getStudySummary() {
+  getStudyCount() {
     this.data.forEach(element => {
       // set status count
       if (element.step_id == 1)
