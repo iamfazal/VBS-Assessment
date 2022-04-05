@@ -1,5 +1,6 @@
 {
-  "name": "vbs-test-assessent",
+  "name": "vbs-test-assessment",
+  "description": "Technical Assessment for Sr. Software Engineer -VBS",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,6 +10,7 @@
     "test": "ng test"
   },
   "private": true,
+  "author": "Fazal ur Rehman",
   "dependencies": {
     "@angular/animations": "~13.3.0",
     "@angular/common": "~13.3.0",
